@@ -10,56 +10,113 @@ redirect_from:
 
 {% include base_path %}
 
-# Education
+## Education
 
-- Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-- M.S. in Jekyll, GitHub University, 2014
-- B.S. in GitHub, GitHub University, 2012
+**Monroe University**, Bronx, NY  
+_Bachelor of Science in Computer Information Systems (Magna Cum Laude)_  
+Minor: Mathematics  
+2021 – 2025  
+**GPA:** 3.7 / 4.0  
+[monroeu.edu](https://www.monroeu.edu/)
 
-# Work experience
+---
 
-- Spring 2024: Academic Pages Collaborator
-    - GitHub University
-    - Duties includes: Updates and improvements to template
-    - Supervisor: The Users
+**Lycée Privé ACEEM**, Madagascar  
+_Baccalauréat – Scientific Track_  
+2015 – 2018  
+[YouTube Channel](https://www.youtube.com/@aceemgroupe8437)
 
-- Fall 2015: Research Assistant
-    - GitHub University
-    - Duties included: Merging pull requests
-    - Supervisor: Professor Hub
+---
 
-- Summer 2015: Research Assistant
-    - GitHub University
-    - Duties included: Tagging issues
-    - Supervisor: Professor Git
+## Experience
 
-# Skills
+**Junior Data Analyst**  
+_Office of Academic Records, Assessment, and Planning — Monroe University_  
+New Rochelle, NY | 2025 – Present
 
-- Skill 1
-- Skill 2
-    - Sub-skill 2.1
-    - Sub-skill 2.2
-    - Sub-skill 2.3
-- Skill 3
+- Recreated and optimized **100+ Power BI dashboards** to track student performance, retention, and graduation rates.
+- Built a **SharePoint site** for ARAP to streamline internal data sharing and collaboration.
+- Updated the university library website using **HTML, CSS, JavaScript, and LibGuides** to improve UX and accessibility.
 
-# Publications
+---
 
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**Information Technology Peer Tutor**  
+_Student Success Center — Monroe University_  
+Bronx, NY | 2023 – 2025
+
+- Tutored students in **Excel, databases, and programming** across multiple academic levels.
+- Assisted alumni with real-world IT issues, including **e-commerce setup and troubleshooting**.
+
+---
+
+**Software Developer Intern**  
+_New Rochelle Council of Community Services_  
+New Rochelle, NY | 2023
+
+- Collaborated on a nonprofit website redesign using **Next.js (TypeScript) and Tailwind CSS**.
+- Implemented **Figma wireframes** and recreated designs using **WordPress themes and plugins**.
+
+---
+
+**Resident Assistant**  
+_Residence Life — Monroe University_  
+New Rochelle, NY | 2022 – 2023
+
+- Supported **50+ residents**, resolving conflicts, reporting maintenance issues, and connecting students to resources.
+- Planned and led **10+ community events per semester** in collaboration with Residence Life staff.
+
+---
+
+## Awards
+
+**12 Hackathon Wins**  
+2022 – 2024  
+Several East Coast Universities & Major League Hacking
+
+- Won hackathons across the U.S. (Yale, Princeton, Stony Brook, RPI, University of Pennsylvania)
+- Earned approximately **$4,000 in prizes**  
+  [Devpost Profile](https://devpost.com/mrava)
+
+---
+
+**Dean’s Award for Academic Excellence**  
+2025  
+Monroe University
+
+- Awarded for outstanding academic achievement, leadership, and impact.
+
+---
+
+## Certificates
+
+**CS50P – Introduction to Programming with Python**  
+Harvard University, 2022
+
+**DELF B2 – French Language Proficiency**  
+Alliance Française Madagascar, 2020
+
+---
+
+## Languages
+
+- **Malagasy** — Native
+- **English** — Fluent
+- **French** — Fluent (DELF B2 Certified)
+
+---
+
+## Interests
+
+**Applied AI & Data Systems**  
+Machine Learning · Deep Learning · Data Analysis · Data Visualization ·  
+Big Data · Data Engineering · MCP · RAG
+
+---
+
+## Contact
+
+Queens, NY  
+mravaloarison@gmail.com
+
+- **GitHub:** [github.com/mravaloarison](https://github.com/mravaloarison)
+- **LinkedIn:** [linkedin.com/in/mravaloarison](https://linkedin.com/in/mravaloarison)
