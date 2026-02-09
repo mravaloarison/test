@@ -1,39 +1,137 @@
 ---
-layout: compress
+layout: default
 ---
 
-{% include base_path %}
+{% assign cv = site.data.cv.cv %}
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} | {{ site.name | default: site.title }}</title>
-    {% include head.html %}
-    {% include head/custom.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cv-layout.css">
-  </head>
+<section class="cv-section">
+  <h2>Contact</h2>
 
-  <body class="cv-layout">
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+  <p>
+    <strong>{{ cv.name }}</strong><br>
+    {{ cv.label }}<br>
+    {{ cv.location }}
+  </p>
 
-    <div id="main" role="main">
-      <div class="container">
-        {{ content }}
-      </div>
-    </div>
+  <p class="cv-links">
+    <a href="mailto:{{ cv.email }}">
+      <i class="fa-solid fa-envelope"></i>
+      {{ cv.email }}
+    </a>
+  </p>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+  <p class="cv-links">
+    {% for net in cv.social_networks %}
+    <a href="https://{{ net.network | downcase }}.com/{{ net.username }}" target="_blank" rel="noopener">
+      <i class="fa-brands fa-{{ net.network | downcase }}"></i>
+      {{ net.network }}
+    </a>
+    {% unless forloop.last %} · {% endunless %}
+    {% endfor %}
+  </p>
+</section>
 
-    {% include scripts.html %}
+<hr>
 
-  </body>
-</html>
+<section class="cv-section">
+  <h2>Education</h2>
+
+  {% for edu in cv.sections.Education %}
+  <div class="cv-item">
+    <h3>{{ edu.studyType }}{% if edu.area %}, {{ edu.area }}{% endif %}</h3>
+    <p class="cv-meta">
+      {{ edu.institution }} — {{ edu.location }}<br>
+      {{ edu.start_date }} – {{ edu.end_date }}
+      {% if edu.score %} · {{ edu.score }}{% endif %}
+      {% if edu.minor %} · Minor: {{ edu.minor }}{% endif %}
+    </p>
+  </div>
+  {% endfor %}
+</section>
+
+<hr>
+
+<section class="cv-section">
+  <h2>Experience</h2>
+
+  {% for job in cv.sections.Experience %}
+  <div class="cv-item">
+    <h3>{{ job.position }}</h3>
+    <p class="cv-meta">
+      {{ job.company }} — {{ job.location }}<br>
+      {{ job.start_date }} – {{ job.end_date }}
+    </p>
+
+    <ul>
+      {% for h in job.highlights %}
+      <li>{{ h }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
+
+<hr>
+
+<section class="cv-section">
+  <h2>Awards</h2>
+
+  {% for award in cv.sections.Awards %}
+  <div class="cv-item">
+    <h3>{{ award.title }}</h3>
+    <p class="cv-meta">
+      {{ award.awarder }} · {{ award.date }}
+    </p>
+    <p>{{ award.summary }}</p>
+
+    {% if award.url %}
+    <p>
+      <a href="{{ award.url }}" target="_blank" rel="noopener">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        View
+      </a>
+    </p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<hr>
+
+<section class="cv-section">
+  <h2>Languages</h2>
+
+  <ul class="cv-inline-list">
+    {% for lang in cv.sections.Languages %}
+    <li>
+      <strong>{{ lang.name }}</strong>: {{ lang.summary }}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<hr>
+
+<section class="cv-section">
+  <h2>Interests</h2>
+
+  {% for interest in cv.sections.Interests %}
+  <p>
+    <strong>{{ interest.name }}</strong><br>
+    {{ interest.keywords }}
+  </p>
+  {% endfor %}
+</section>
+
+<hr>
+
+<section class="cv-section">
+  <h2>Certificates</h2>
+
+  {% for cert in cv.sections.Certificates %}
+  <p>
+    <strong>{{ cert.name }}</strong><br>
+    {{ cert.issuer }} · {{ cert.date }}
+  </p>
+  {% endfor %}
+</section>
