@@ -11,8 +11,8 @@ I'm a data analyst with a strong background in programming and software developm
 
 While I was a student, I activelly participated in hackathons, and won <a href="https://devpost.com/mrava">over 12 awards</a> across universities in the U.S. by building iOS and watchOS apps, web applications, desktop tools, and browser extensions. These experiences strengthened my problem-solving skills, collaboration, and ability to prototype ideas quickly.
 
-Currently, I'm a data analyst at <a href="https://www.monroeu.edu/">Monroe University</a>, where I recreate legacy dashboards in Power BI. In addition to analytics work, I build and maintain SharePoint sites for my department and was recently assigned to redesign the university’s library website using SpringShare’s LibGuides platform.
+Currently, I'm a data analyst at my old school, where I recreate legacy dashboards in <a href="https://www.microsoft.com/en-us/power-platform/products/power-bi">Power BI</a>. In addition to analytics work, I build and maintain <a href="https://support.microsoft.com/en-us/sharepoint">SharePoint</a> sites for my department and was recently assigned to redesign the university’s library website using <a href="https://www.springshare.com/">SpringShare</a>’s LibGuides platform.
 
-This role has made me more serious about pursuing a career in data science and my plan to deepen my foundations through graduate study.
+This role has made me more serious about pursuing a career in data science and learn deeper foundations through graduate study.
 
-Outside of work, I love dogs, learning new songs on the piano, guitar, and bass, playing chess, and watching comedy and science fiction. I also try to consistently cook healthy meals and going to the gym, though I sometimes lack motivation to do so.
+Outside of work, I love dogs, learning new songs on the piano, guitar, and bass, playing chess, and video games. I also try to consistently cook healthy meals and going to the gym, though I’m still working on making those habits stick!
